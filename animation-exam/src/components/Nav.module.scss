@@ -1,0 +1,34 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+  padding: none;
+
+  li {
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+  
+    text-decoration: none;
+    padding: 1rem;
+    flex-direction: row;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+  }
+}
+
+.menuButton {
+    display: flex;
+    background-color: none;
+    background-image: url("../assets/menu_FILL0_wght400_GRAD0_opsz24.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}

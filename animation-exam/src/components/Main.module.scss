@@ -1,0 +1,60 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+
+.pumpkinContainer {
+  background-image: url("../assets/Group\ 1.svg");
+  height: 500px;
+  width: 500px;
+  filter: drop-shadow(0px 0px 14px crimson);
+
+  .leftEye {
+    width: 25px; /* Adjust to the size you want */
+    height: 25px; /* Adjust to the size you want */
+    border-radius: 50%; /* Makes the element circular */
+    background-color: rgb(243, 246, 65); /* Background color for the eye */
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 35.5%; /* Position the eye in the center horizontally */
+    top: 53%; /* Position the eye in the center vertically */
+    filter:
+    drop-shadow(0px 0px 10px crimson) ;
+}
+  .rightEye {
+    width: 25px; /* Adjust to the size you want */
+    height: 25px; /* Adjust to the size you want */
+    border-radius: 50%; /* Makes the element circular */
+    background-color: #f3f641; /* Background color for the eye */
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 60.5%; /* Position the eye in the center horizontally */
+    top: 46%; /* Position the eye in the center vertically */
+    filter:
+    drop-shadow(0px 0px 10px crimson) ;
+  }
+
+  .pupil {
+    width: 10px; /* Adjust to the size you want */
+    height: 10px; /* Adjust to the size you want */
+    border-radius: 50%; /* Makes the element circular */
+    background-color: #000; /* Background color for the pupil */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%; /* Position the pupil in the center horizontally */
+    top: 50%; /* Position the pupil in the center vertically */
+    box-shadow: rgba(0, 0, 0, 0.613) 0px 0px 5px;
+  }
+  
+  .eye:nth-child(1) {
+    left: 50%; /* Position the first eye to the left of the container */
+  }
+  
+  .eye:nth-child(2) {
+    left: 50%; /* Position the second eye to the right of the container */
+  }
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+
+.header {
+    width: 100vw;
+    background-color: crimson;
+    box-shadow: crimson 0px 10px 30px;
+
+    h1 {
+        font-family: butcherman;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        padding: 3rem;
+        filter: drop-shadow(black 0px 0px 10px);
+    }
+}
