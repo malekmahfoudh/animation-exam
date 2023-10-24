@@ -25,10 +25,40 @@ ul {
 
 .menuButton {
     display: flex;
+    margin-left: 4rem;
     background-color: none;
     background-image: url("../assets/menu_FILL0_wght400_GRAD0_opsz24.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 50px;
     width: 50px;
+}
+
+.list {
+    animation: slideIn 1s ease-in-out;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0.324);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    z-index: 1;
+
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
