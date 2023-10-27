@@ -10,33 +10,25 @@ ul {
     list-style: none;
     font-size: 1.5rem;
     font-weight: 600;
-  
+    filter: drop-shadow(black 0px 0px 10px);
     text-decoration: none;
     padding: 1rem;
     flex-direction: row;
 
     a {
         text-decoration: none;
-        color: white;
+        color: rgba(255, 255, 255, 0.593);
     }
     
   }
 }
 
-.menuButton {
-    display: flex;
-    margin-left: 4rem;
-    background-color: none;
-    background-image: url("../assets/menu_FILL0_wght400_GRAD0_opsz24.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50px;
-    width: 50px;
+a:hover {
+  color: white;
+  scale: 1.1;
 }
 
-.list {
-    animation: slideIn 1s ease-in-out;
-}
+
 
 .overlay {
     position: fixed;
@@ -54,11 +46,11 @@ ul {
 }
 
 
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
+// @keyframes slideIn {
+//     0% {
+//         transform: translateX(-100%);
+//     }
+//     100% {
+//         transform: translateX(0%);
+//     }
+// }

@@ -1,10 +1,18 @@
 import React, { useRef, useState, useEffect } from "react";
 import style from "./Main.module.scss";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
+import Header from "./Header";
+import Modal from "./Modal";
+import Footer from "./Footer";
 
 function Main() {
   const [angle, setAngle] = useState(0);
   const containerRef = useRef(null);
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -31,16 +39,40 @@ function Main() {
   };
 
   return (
-    <article className={style.main}>
-      <section className={style.pumpkinContainer} ref={containerRef}>
-        <div className={style.leftEye} style={eyeStyle}>
-            <motion.div className={style.pupil} style={eyeStyle}></motion.div>
-        </div>
-        <div className={style.rightEye} style={eyeStyle}>
-            <div className={style.pupil} style={eyeStyle}></div>
-        </div>
+    <>
+      <Header />
+      <section className={style.mainPage}>
+        <article className={style.asideLeft}>
+          <h2>Check out </h2>
+        </article>
+        {/* <article> FLEX COLUMN */}
+        <article className={style.main}>
+          {/* <motion.div className={style.bats} ></motion.div> */}
+          <h2 className={style.mainText}>
+            Are you brave enough for our <br></br> haunted house?
+          </h2>
+          {showModal && <Modal />}
+          <section
+            className={style.pumpkinContainer}
+            ref={containerRef}
+            onClick={toggleModal}
+          >
+            <div className={style.leftEye} style={eyeStyle}>
+              <motion.div className={style.pupil} style={eyeStyle}></motion.div>
+            </div>
+            <div className={style.rightEye} style={eyeStyle}>
+              <div className={style.pupil} style={eyeStyle}></div>
+            </div>
+          </section>
+          <p className="clickMeText">Click me if you dare you</p>
+        </article>
+        <article className={style.asideRight}>
+          <h2>More info</h2>
+        </article>
       </section>
-    </article>
+
+      <Footer />
+    </>
   );
 }
 

@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
 
-.header {
+.footer {
     width: 100vw;
-    background-color: rgba(144, 26, 50, 0.547);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 
  
 
@@ -14,4 +12,12 @@
         padding: 3rem;
         filter: drop-shadow(black 0px 0px 10px);
     }
+}
+
+.footerContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0rem;
 }

@@ -1,45 +1,53 @@
 import React from "react";
-import { useState } from "react";
 import style from "./Nav.module.scss";
 import { motion, AnimatePresence, spring } from "framer-motion";
 
+
+const items = [
+  {
+    id: 1,
+    name: "Attractions",
+    link: "/attractions",
+  },
+  {
+    id: 2,
+    name: "Tickets",
+    link: "/tickets",
+  },
+  {
+    id: 3,
+    name: "Contact",
+    link: "/contact",
+  },
+];
+
 function Nav() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
 
   return (
     <nav>
-      <button className={style.menuButton} onClick={toggleMenu}></button>
       <AnimatePresence>
-        {isMenuOpen && (
+        
           <motion.ul
             className={style.list}
-
           >
-            <motion.li 
+            {items.map((item, i) => (
+                <motion.li
+                key={item.id}
                 className={style.listItem}
-                whileHover={{ scale: 1.1 }} 
-                whileTap={{ scale: 0.9 }}>
-                <a href="/attractions">Attractions</a>
-            </motion.li>
-            <motion.li 
-                className={style.listItem}
-                whileHover={{ scale: 1.1 }} 
-                whileTap={{ scale: 0.9 }}>
-              <a href="/tickets">Tickets</a>
-            </motion.li>
-            <motion.li
-                className={style.listItem} 
-                whileHover={{ scale: 1.1 }} 
-                whileTap={{ scale: 0.9 }}>
-              <a href="/contact">Contact</a>
-            </motion.li>
+                initial={{ 
+                    opacity: 0, 
+                    translateX: i % 1 === 0 ? -500: 500,
+                    
+                 }}
+                animate={{ opacity: 1, translateX: 0 }}
+                transition={{ duration: .6, delay: i * 0.6}}
+              >
+                <a href={item.link}>{item.name}</a>
+              </motion.li>
+            ))}
+ 
           </motion.ul>
-        )}
+        
       </AnimatePresence>
     </nav>
   );
