@@ -1,0 +1,9 @@
+Fixa tickets sida
+
+scroll till footer onClick på 'contact'
+
+se över attractions sida
+
+animera modal (open/close), stäng onClick utanför
+
+hover effekt på hauntedButton
