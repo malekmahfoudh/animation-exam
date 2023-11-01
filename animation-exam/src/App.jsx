@@ -33,7 +33,7 @@ function App() {
         <Route path="/main" element={<Main />} />
         <Route path="/attractions" element={<AttractionsPage />} />
         <Route path="/tickets" element={<TicketsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        {/* <Route path="/contact" element={<ContactPage />} /> */}
       </Routes>
     </BrowserRouter>
   );

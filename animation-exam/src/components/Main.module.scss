@@ -34,20 +34,40 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-
+  word-spacing: 1rem;
+  background-image: url('../assets/skull.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 
 .hauntedButton {
   font-size: larger;
-  border: 5px solid black;
+  border: 5px solid #ebee24;
   border-radius: 2rem;
   padding: 1rem 2rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, background-position 0.3s, transform 0.2s ease-in-out;
+
+  &:hover {
+    background-position: -100% 0;
+    background-color: #ebee24;
+    color: black;
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.75);
+  }
+
 }
 
+
+
 .spookyText {
-  background-image: url('../assets/skull-removebg-preview.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
+
   max-width: 35rem;
   font-family: butcherman;
   font-size: 2rem;

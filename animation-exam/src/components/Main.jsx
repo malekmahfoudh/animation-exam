@@ -45,34 +45,20 @@ function Main() {
       <Header />
       <section className={style.mainPage}>
         <AsideLeft />
-        {/* <article> FLEX COLUMN */}
-        {/* <article className={style.main}>
-        
-          <h2 className={style.mainText}>
-            Are you brave enough for our <br></br> haunted house?
-          </h2>
-          {showModal && <Modal />}
-          <section
-            className={style.pumpkinContainer}
-            ref={containerRef}
-            onClick={toggleModal}
-          >
-            <div className={style.leftEye} style={eyeStyle}>
-              <motion.div className={style.pupil} style={eyeStyle}></motion.div>
-            </div>
-            <div className={style.rightEye} style={eyeStyle}>
-              <div className={style.pupil} style={eyeStyle}></div>
-            </div>
-          </section>
-          <p className="clickMeText">Click me if you dare you</p>
-        </article> */}
-
         <article className={style.mainPageText}>
           <h4 className={style.spookyText}>
-          Step into the heart-pounding world of our haunted house attraction at the amusement park, where every creaking floorboard and shadowy corridor hides spine-chilling secrets. Prepare for a journey through eerie rooms, encountering restless spirits, and facing your deepest fears, as you navigate the chilling mysteries that await within the dimly lit, ghostly halls.
+            Step into the heart-pounding world of our haunted house attraction
+            at the amusement park, where every creaking floorboard and shadowy
+            corridor hides spine-chilling secrets. 
           </h4>
+          <h4 className={style.spookyText}> Prepare for a
+            journey through eerie rooms, encountering restless spirits, and
+            facing your deepest fears, as you navigate the chilling mysteries
+            that await within the dimly lit, ghostly halls.</h4>
           {showModal && <Modal />}
-            <button className={style.hauntedButton} onClick={toggleModal}>check it out</button>
+          <button className={style.hauntedButton} onClick={toggleModal}>
+            check it out
+          </button>
         </article>
         <AsideRight />
       </section>
