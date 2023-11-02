@@ -1,5 +1,0 @@
-Fixa tickets sida
-
-se över attractions sida
-
-animera modal (open/close), stäng onClick utanför
