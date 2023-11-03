@@ -1,51 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Butcherman&display=swap");
 
 .header {
-    width: 100vw;
-    background-color: rgba(144, 26, 50, 0.547);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  background-color: rgba(144, 26, 50, 0.547);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 
-    .titleWrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0;
-    }
- 
+  .titleWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
 
-    h1 {
-        font-family: butcherman;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        padding: 3rem;
-        filter: drop-shadow(black 0px 0px 10px);
-    }
+  h1 {
+    font-family: butcherman;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding: 3rem;
+    filter: drop-shadow(black 0px 0px 10px);
+  }
 
-    .homeButton {
-        display: block;
-        all: unset;
-        background-image: url("../assets/skull-removebg-preview.png");
-        height: 5rem;
-        width: 5rem;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        // margin-right: 10rem;
-
-    }
+  .homeButton {
+    display: block;
+    all: unset;
+    background-image: url("../assets/skull-removebg-preview.png");
+    height: 5rem;
+    width: 5rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 }
 
 .splashHeader {
-    width: 100vw;
-    background-color: rgba(144, 26, 50, 0.547);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  background-color: rgba(144, 26, 50, 0.547);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 
-
-    h1 {
-        font-family: butcherman;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        padding: 3rem;
-        filter: drop-shadow(black 0px 0px 10px);
-    }
-
+  h1 {
+    font-family: butcherman;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding: 3rem;
+    filter: drop-shadow(black 0px 0px 10px);
+  }
 }

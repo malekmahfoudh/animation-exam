@@ -5,25 +5,6 @@ import Main from "./components/Main";
 import "./App.css";
 import AttractionsPage from "./pages/AttractionsPage";
 import TicketsPage from "./pages/TicketsPage";
-import ContactPage from "./pages/ContactPage";
-
-const items = [
-  {
-    id: 1,
-    name: "Attractions",
-    link: "/attractions",
-  },
-  {
-    id: 2,
-    name: "Tickets",
-    link: "/tickets",
-  },
-  {
-    id: 3,
-    name: "Contact",
-    link: "/contact",
-  },
-];
 
 function App() {
   return (
@@ -33,7 +14,6 @@ function App() {
         <Route path="/main" element={<Main />} />
         <Route path="/attractions" element={<AttractionsPage />} />
         <Route path="/tickets" element={<TicketsPage />} />
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
       </Routes>
     </BrowserRouter>
   );

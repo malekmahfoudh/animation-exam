@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background: linear-gradient(rgba(220, 20, 60, 0.547) 5%,#0c0b28 95%);
+  background: linear-gradient(rgba(220, 20, 60, 0.547) 5%, #0c0b28 95%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,15 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-
-
-/* body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
-} */
 
 h1 {
   font-size: 3.2em;
@@ -32,11 +23,9 @@ button {
   all: unset;
   font-family: inherit;
   cursor: pointer;
-
 }
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-

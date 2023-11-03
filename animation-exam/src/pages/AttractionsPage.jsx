@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Attraction from "../components/Attraction";
 import Header from "../components/Header";
 import style from "./AttractionsPage.module.scss";

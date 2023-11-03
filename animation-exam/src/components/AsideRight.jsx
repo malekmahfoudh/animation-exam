@@ -8,7 +8,6 @@ function AsideRight() {
       <h2>Deals</h2>
       <Tickets />
       <Tickets />
-
     </aside>
   );
 }

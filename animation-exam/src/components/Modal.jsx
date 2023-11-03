@@ -1,8 +1,7 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
 import style from "./Modal.module.scss";
 
-function Modal({ toggleModal }) {
+function Modal() {
   return (
     <motion.div
       initial={{ opacity: 0 }}

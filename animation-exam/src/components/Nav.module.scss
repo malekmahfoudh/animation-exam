@@ -16,10 +16,9 @@ ul {
     flex-direction: row;
 
     a {
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.593);
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.593);
     }
-    
   }
 }
 
@@ -29,20 +28,16 @@ a:hover {
   cursor: pointer;
 }
 
-
-
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 80vh;
-    width: 80vw;
-    background-color: rgba(0, 0, 0, 0.324);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.5;
-    z-index: 1;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80vh;
+  width: 80vw;
+  background-color: rgba(0, 0, 0, 0.324);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  z-index: 1;
 }
-

@@ -4,7 +4,7 @@
   justify-content: space-around;
 }
 
-.asideLeft{
+.asideLeft {
   display: flex;
   width: 25rem;
   gap: 3rem;
@@ -19,14 +19,13 @@
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
 .mainPageText {
   display: flex;
@@ -35,7 +34,7 @@
   align-items: center;
   gap: 2rem;
   word-spacing: 1rem;
-  background-image: url('../assets/skull.png');
+  background-image: url("../assets/skull.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -49,7 +48,8 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, background-position 0.3s, transform 0.2s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    background-position 0.3s, transform 0.2s ease-in-out;
 
   &:hover {
     background-position: -100% 0;
@@ -61,81 +61,71 @@
   &:active {
     transform: scale(0.75);
   }
-
 }
 
-
-
 .spookyText {
-
   max-width: 35rem;
   font-family: butcherman;
   font-size: 2rem;
   color: #ebee24;
   filter: drop-shadow(0px 0px 15px crimson);
-
 }
 
 .splashPage {
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
-  @import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Butcherman&display=swap");
 
 .pumpkinContainer {
-  background-image: url("../assets/Group\ 1.svg") ;
+  background-image: url("../assets/Group\ 1.svg");
   height: 31.25rem;
   width: 31.25rem;
   filter: drop-shadow(0px 0px 14px crimson);
 
-  
-
-
   .leftEye {
-    width: 1.5625rem; 
-    height: 1.5625rem; 
-    border-radius: 50%; 
-    background-color: rgb(243, 246, 65); 
-    position: relative;
-    transform: translate(-50%, -50%);
-    left: 35.5%; 
-    top: 53%; 
-    filter:
-    drop-shadow(0px 0px 10px crimson) ;
-}
-  .rightEye {
-    width: 1.5625rem; 
-    height: 1.5625rem; 
+    width: 1.5625rem;
+    height: 1.5625rem;
     border-radius: 50%;
-    background-color: #f3f641; 
+    background-color: rgb(243, 246, 65);
     position: relative;
     transform: translate(-50%, -50%);
-    left: 60.5%; 
-    top: 46%; 
-    filter:
-    drop-shadow(0px 0px 10px crimson) ;
+    left: 35.5%;
+    top: 53%;
+    filter: drop-shadow(0px 0px 10px crimson);
+  }
+  .rightEye {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border-radius: 50%;
+    background-color: #f3f641;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 60.5%;
+    top: 46%;
+    filter: drop-shadow(0px 0px 10px crimson);
   }
 
   .pupil {
-    width: 10px; 
+    width: 10px;
     height: 10px;
-    border-radius: 50%; 
-    background-color: #000; 
+    border-radius: 50%;
+    background-color: #000;
     position: absolute;
     transform: translate(-50%, -50%);
-    left: 50%; 
-    top: 50%; 
+    left: 50%;
+    top: 50%;
     box-shadow: rgba(0, 0, 0, 0.613) 0px 0px 5px;
   }
-  
+
   .eye:nth-child(1) {
-    left: 50%; 
+    left: 50%;
   }
-  
+
   .eye:nth-child(2) {
-    left: 50%; 
+    left: 50%;
   }
 }
 
@@ -145,7 +135,6 @@
   filter: drop-shadow(0px 0px 34px crimson);
   cursor: pointer;
 }
-
 
 .mainText {
   font-family: butcherman;
@@ -165,7 +154,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../assets/halloween-bats.svg");
-  animation: bats 4s linear infinite; 
+  animation: bats 4s linear infinite;
   position: absolute;
 }
 
@@ -187,20 +176,17 @@
 @keyframes shake {
   0% {
     transform: rotate(0deg);
-
   }
   25% {
     transform: rotate(5deg);
   }
   50% {
     transform: rotate(0deg);
-
   }
   75% {
     transform: rotate(-5deg);
   }
   100% {
     transform: rotate(0deg);
-
   }
 }

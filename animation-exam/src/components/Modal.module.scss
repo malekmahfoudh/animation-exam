@@ -1,15 +1,13 @@
-
 .overlay {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
   z-index: 2;
-
 }
 
 .modalContent {
-    backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,30 +27,30 @@
 }
 
 .overlayContent {
-    h3 {
-        font-size: 2rem;
-        color: #fff;
-        margin-bottom: 1rem;
-        margin-top: 10rem;
-    }
+  h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    margin-top: 10rem;
+  }
 
-    p {
-        margin-bottom: 3rem;
-    }
+  p {
+    margin-bottom: 3rem;
+  }
 
-    button {
-        border: 2px solid black;
-        padding: 1rem 2rem ;
-        border-radius: 2rem;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-    }
+  button {
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
 }
 .overlayImg {
-    border-radius: 2.5%;
-    height: 400px;
-    width: 600px;
-    background-size: cover;
-    background-image: url("../assets/haunted-house.avif");
-    background-repeat: no-repeat;
+  border-radius: 2.5%;
+  height: 400px;
+  width: 600px;
+  background-size: cover;
+  background-image: url("../assets/haunted-house.avif");
+  background-repeat: no-repeat;
 }

@@ -1,66 +1,61 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Butcherman&display=swap");
 
 .pumpkinContainer {
-  background-image: url("../assets/Group\ 1.svg") ;
+  background-image: url("../assets/Group\ 1.svg");
   height: 500px;
   width: 500px;
   filter: drop-shadow(0px 0px 14px crimson);
 
-  
-
-
   .leftEye {
-    width: 25px; 
-    height: 25px; 
-    border-radius: 50%; 
-    background-color: rgb(243, 246, 65); 
-    position: relative;
-    transform: translate(-50%, -50%);
-    left: 35.5%; 
-    top: 53%; 
-    filter:
-    drop-shadow(0px 0px 10px crimson) ;
-}
-  .rightEye {
-    width: 25px; 
-    height: 25px; 
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    background-color: #f3f641; 
+    background-color: rgb(243, 246, 65);
     position: relative;
     transform: translate(-50%, -50%);
-    left: 60.5%; 
-    top: 46%; 
-    filter:
-    drop-shadow(0px 0px 10px crimson) ;
+    left: 35.5%;
+    top: 53%;
+    filter: drop-shadow(0px 0px 10px crimson);
+  }
+  .rightEye {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #f3f641;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 60.5%;
+    top: 46%;
+    filter: drop-shadow(0px 0px 10px crimson);
   }
 
   .pupil {
-    width: 10px; 
+    width: 10px;
     height: 10px;
-    border-radius: 50%; 
-    background-color: #000; 
+    border-radius: 50%;
+    background-color: #000;
     position: absolute;
     transform: translate(-50%, -50%);
-    left: 50%; 
-    top: 50%; 
+    left: 50%;
+    top: 50%;
     box-shadow: rgba(0, 0, 0, 0.613) 0px 0px 5px;
   }
-  
+
   .eye:nth-child(1) {
-    left: 50%; 
+    left: 50%;
   }
-  
+
   .eye:nth-child(2) {
-    left: 50%; 
+    left: 50%;
   }
 }
 
@@ -70,7 +65,6 @@
   filter: drop-shadow(0px 0px 34px crimson);
   cursor: pointer;
 }
-
 
 .mainText {
   font-family: butcherman;
@@ -110,21 +104,18 @@
 @keyframes shake {
   0% {
     transform: rotate(0deg);
-
   }
   25% {
     transform: rotate(5deg);
   }
   50% {
     transform: rotate(0deg);
-
   }
   75% {
     transform: rotate(-5deg);
   }
   100% {
     transform: rotate(0deg);
-
   }
 }
 

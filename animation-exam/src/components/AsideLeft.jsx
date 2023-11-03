@@ -5,7 +5,9 @@ import Attraction from "./Attraction";
 function AsideLeft() {
   return (
     <aside className={style.asideLeft}>
-      <h2>Popular <br></br> attractions</h2>
+      <h2>
+        Popular <br></br> attractions
+      </h2>
       <Attraction />
       <Attraction />
       <Attraction />
